@@ -1,0 +1,295 @@
+.bar{
+  border-right: 3px solid #3ebcb3;
+}
+.body-header{
+    width:100%;
+    height:4rem;
+    background-color:#0000;
+    margin:auto;
+    display: block;
+}
+
+#main-header{
+    display:flex;
+    justify-content: space-between;
+}
+
+.company-logo{
+    margin-left: 8%;
+}
+.company-logo img{
+    margin-top:1.5rem;
+    height: 30px;
+    width: 100px;
+}
+
+.bell-icon{
+  display: block;
+}
+
+.hr-list{
+    margin-top: 0;
+    padding: 0;
+    display: inline-block;
+    flex-direction: row;
+    /*float: right;*/
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 7%;
+    
+}
+
+
+.bell-icon  i{
+  margin-top:1.5rem;
+  font-size: 2rem;
+}
+
+
+.bell-user{
+    position: relative;
+  }
+
+
+
+.num{
+position:absolute;
+margin-right:120px
+width:25px;
+height:25px;
+border-radius:50%;
+background:#ff2c74;
+color:#fff;
+top: 0.5rem;
+left: 40%;
+font-size:15px;
+text-align:center;
+}
+
+.hr-list img{
+  margin-top:1rem;
+  width:2.5rem;
+  height:2.5rem ;   
+  text-align: center;
+  border-radius: 4rem;
+  margin-left:2rem;
+}
+.cards{
+  padding-top: 60px;
+  padding-left: 100px;
+  padding-right: 80px;
+}
+
+.content{
+  background-color: white;
+  padding:30px;
+  padding-top:40px;
+  padding-bottom:40px;
+  border-radius:10px;
+
+  
+}
+.content p{
+  color:#b0b0b0;
+  font-size:14px;
+  padding-right:30px;
+  padding-top: 20px;
+}
+.content:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: content_animation;
+  animation-duration: 0.25s;
+  border-left: 8px solid #69cac3;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  color:#69cac3;
+}
+
+@keyframes content_animation {
+    0%   {border-left: 2px solid #69cac3;}
+    25%  {border-left: 3px solid #69cac3;}
+    50%  {border-left: 4px solid #69cac3;}
+    100% {border-left: 5px solid #69cac3;}
+}
+
+.content_card{
+  background-color: #f9fbfb;
+  padding: 20px;
+  color:#9d9d9d;
+}
+
+.content_image{
+  height: 70px;
+  width: 70px;
+  text-align: center;
+}
+
+.content_store{
+  padding-top: 60px;
+  padding-left: 100px;
+  padding-right:80px;
+}
+
+.content_store a:link{
+  text-decoration:underline;
+  color: #9ea1a8;
+ 
+}
+
+.footer{
+  text-align: center;
+  background-color: #e9f2eb;
+  padding: 30px;
+  color: #9ea1a8;
+}
+
+.footer i{
+  padding: 15px;
+}
+
+.footer_links{
+  padding: 20px;
+}
+
+.footer_links a:link{
+  text-decoration:underline;
+  color: #9ea1a8;
+  padding:10px;
+}
+
+
+
+.icon{
+  padding:10px;
+}
+
+.logo{
+  height:30px;
+  width: 100px;
+
+}
+
+.main {
+  margin-left: 60px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+   background-color:#e9f2eb;
+}
+
+.order_button{
+  padding-left:40px;
+  padding-right:40px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  background-color:transparent;
+  color:#9eddd9;
+  border: 2px solid #9eddd9;
+  border-radius:5px;
+}
+
+.order_excel_button{
+  padding-left:40px;
+  padding-right:40px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  background-color:transparent;
+  color:#9eddd9;
+  border: 2px solid #9eddd9;
+  border-radius:5px;
+
+}
+
+.sidenav {
+  height: 100%; 
+  width: 60px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: white; 
+  overflow-x: hidden; 
+  padding-top: 100px;
+  box-shadow: 5px 0 5px -5px #ebebeb;
+}
+
+.sidenav a {
+  padding: 25px 8px 6px 16px;
+  text-decoration: none;
+  
+  font-size: 10px;
+  color: #777;
+  display: block;
+  text-align: center;
+
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+.sidenav_icons{
+  color: #3ebcb3;
+}
+/*Media Queries */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .content_store{
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right:30px;
+}
+
+  .cards{
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.content_image{
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+
+  
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+   .content_store{
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right:30px;
+}
+
+.cards{
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+ 
+  
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .content_store{
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right:30px;
+}
+
+.cards{
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+  
+}
